@@ -15,14 +15,32 @@ namespace desktop_tasks
         {
             try
             {
+                if (String.IsNullOrEmpty(textBoxTitle.Text))
+                {
+                    MessageBox.Show("Le champ titre est vide", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBoxTitle.Focus();
+                    return;
+                }
+                if (String.IsNullOrEmpty(textBoxComment.Text))
+                {
+                    MessageBox.Show("Le champ commentaire est vide", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBoxComment.Focus();
+                    return;
+                }
                 Goal goal = new Goal();
                 goal.Title = textBoxTitle.Text;
                 goal.Comment = textBoxComment.Text;
                 goal.isDone = false;
                 goal.isArchived = false;
                 _dbContext.Goals.Add(goal);
-                _dbContext.SaveChanges();
-                MessageBox.Show("La tâche a bien été crée","Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(_dbContext.SaveChanges()>0)
+                {
+                    MessageBox.Show("La tâche a bien été crée !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Une erreur est survenue !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {
