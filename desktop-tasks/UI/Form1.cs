@@ -1,3 +1,4 @@
+using desktop_tasks.Manager;
 using desktop_tasks.Models;
 
 namespace desktop_tasks
@@ -9,7 +10,9 @@ namespace desktop_tasks
             InitializeComponent();
         }
 
+        GoalManager _goalManager = new GoalManager();
         ApplicationDbContext _dbContext = new ApplicationDbContext();
+
 
         private void buttonCreate_Click(object sender, EventArgs e)
         {
@@ -32,8 +35,7 @@ namespace desktop_tasks
                 goal.Comment = textBoxComment.Text;
                 goal.isDone = false;
                 goal.isArchived = false;
-                _dbContext.Goals.Add(goal);
-                if(_dbContext.SaveChanges()>0)
+                if(_goalManager.Add(goal))
                 {
                     MessageBox.Show("La tâche a bien été crée !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
