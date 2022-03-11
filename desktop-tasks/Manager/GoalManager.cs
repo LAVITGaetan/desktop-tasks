@@ -16,5 +16,10 @@ namespace desktop_tasks.Manager
         {
             return _goalGateway.Add(goal);
         }
+
+        public List<Goal>GetAll()
+        {
+            return _goalGateway.GetAll();
+        }
     }
 }

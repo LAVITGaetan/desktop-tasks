@@ -60,94 +60,61 @@
   <metadata name="groupBoxManager.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <data name="&gt;&gt;textBoxComment.Name" xml:space="preserve">
-    <value>textBoxComment</value>
-  </data>
-  <data name="&gt;&gt;textBoxComment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxComment.Parent" xml:space="preserve">
-    <value>groupBoxManager</value>
-  </data>
-  <data name="&gt;&gt;textBoxComment.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxTitle.Name" xml:space="preserve">
-    <value>textBoxTitle</value>
-  </data>
-  <data name="&gt;&gt;textBoxTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxTitle.Parent" xml:space="preserve">
-    <value>groupBoxManager</value>
-  </data>
-  <data name="&gt;&gt;textBoxTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelComment.Name" xml:space="preserve">
-    <value>labelComment</value>
-  </data>
-  <data name="&gt;&gt;labelComment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelComment.Parent" xml:space="preserve">
-    <value>groupBoxManager</value>
-  </data>
-  <data name="&gt;&gt;labelComment.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelTitle.Name" xml:space="preserve">
-    <value>labelTitle</value>
-  </data>
-  <data name="&gt;&gt;labelTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTitle.Parent" xml:space="preserve">
-    <value>groupBoxManager</value>
-  </data>
-  <data name="&gt;&gt;labelTitle.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;buttonCreate.Name" xml:space="preserve">
-    <value>buttonCreate</value>
-  </data>
-  <data name="&gt;&gt;buttonCreate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonCreate.Parent" xml:space="preserve">
-    <value>groupBoxManager</value>
-  </data>
-  <data name="&gt;&gt;buttonCreate.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="groupBoxManager.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="groupBoxManager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>788, 440</value>
+  <metadata name="Id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Id.HeaderText" xml:space="preserve">
+    <value>Id</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="groupBoxManager.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="Id.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="groupBoxManager.Text" xml:space="preserve">
-    <value>Gestion de tâches</value>
+  <metadata name="Title.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Title.HeaderText" xml:space="preserve">
+    <value>Titre</value>
   </data>
-  <data name="&gt;&gt;groupBoxManager.Name" xml:space="preserve">
+  <data name="Title.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="Comment.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Comment.HeaderText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Comment.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dataGridViewGoals.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 255</value>
+  </data>
+  <data name="dataGridViewGoals.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="dataGridViewGoals.Size" type="System.Drawing.Size, System.Drawing">
+    <value>775, 239</value>
+  </data>
+  <data name="dataGridViewGoals.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewGoals.Name" xml:space="preserve">
+    <value>dataGridViewGoals</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewGoals.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewGoals.Parent" xml:space="preserve">
     <value>groupBoxManager</value>
   </data>
-  <data name="&gt;&gt;groupBoxManager.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxManager.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxManager.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dataGridViewGoals.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="textBoxComment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 166</value>
+    <value>170, 133</value>
   </data>
   <data name="textBoxComment.Size" type="System.Drawing.Size, System.Drawing">
     <value>223, 27</value>
@@ -165,10 +132,10 @@
     <value>groupBoxManager</value>
   </data>
   <data name="&gt;&gt;textBoxComment.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="textBoxTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 99</value>
+    <value>170, 80</value>
   </data>
   <data name="textBoxTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>223, 27</value>
@@ -186,13 +153,13 @@
     <value>groupBoxManager</value>
   </data>
   <data name="&gt;&gt;textBoxTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="labelComment.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelComment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 166</value>
+    <value>45, 133</value>
   </data>
   <data name="labelComment.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -213,13 +180,13 @@
     <value>groupBoxManager</value>
   </data>
   <data name="&gt;&gt;labelComment.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="labelTitle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 99</value>
+    <value>45, 80</value>
   </data>
   <data name="labelTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -240,13 +207,13 @@
     <value>groupBoxManager</value>
   </data>
   <data name="&gt;&gt;labelTitle.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="buttonCreate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>530, 128</value>
+    <value>218, 183</value>
   </data>
   <data name="buttonCreate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 41</value>
+    <value>121, 33</value>
   </data>
   <data name="buttonCreate.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -264,7 +231,31 @@
     <value>groupBoxManager</value>
   </data>
   <data name="&gt;&gt;buttonCreate.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
+  </data>
+  <data name="groupBoxManager.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="groupBoxManager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>840, 500</value>
+  </data>
+  <data name="groupBoxManager.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxManager.Text" xml:space="preserve">
+    <value>Gestion de tâches</value>
+  </data>
+  <data name="&gt;&gt;groupBoxManager.Name" xml:space="preserve">
+    <value>groupBoxManager</value>
+  </data>
+  <data name="&gt;&gt;groupBoxManager.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxManager.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxManager.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -273,7 +264,7 @@
     <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>812, 464</value>
+    <value>864, 524</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
@@ -281,6 +272,24 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Liste des tâches</value>
+  </data>
+  <data name="&gt;&gt;Id.Name" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="&gt;&gt;Id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Title.Name" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="&gt;&gt;Title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Comment.Name" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="&gt;&gt;Comment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>TasksFrame</value>

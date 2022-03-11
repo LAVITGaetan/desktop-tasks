@@ -38,6 +38,8 @@ namespace desktop_tasks
                 if(_goalManager.Add(goal))
                 {
                     MessageBox.Show("La tâche a bien été crée !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Reset();
+                    LoadData();
                 }
                 else
                 {
@@ -49,10 +51,32 @@ namespace desktop_tasks
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void TasksFrame_Load(object sender, EventArgs e)
-        {
 
+        private void Reset()
+        {
+            textBoxTitle.Clear();
+            textBoxComment.Clear();
+        }
+            private void TasksFrame_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
+        private void LoadData()
+        {
+            var goals = _goalManager.GetAll();
+            dataGridViewGoals.Rows.Clear();
+            foreach (var goal in goals)
+            {
+                dataGridViewGoals.Rows.Add(goal.Id, goal.Title, goal.Comment);
+            }
+        }
     }
 }

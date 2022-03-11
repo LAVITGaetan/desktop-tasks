@@ -15,6 +15,11 @@ namespace desktop_tasks.Gateway
             _dbContext.Goals.Add(goal);
             return _dbContext.SaveChanges()>0;
         }
+
+        public List<Goal> GetAll()
+        {
+            return _dbContext.Goals.ToList();
+        }
     }
 
 
