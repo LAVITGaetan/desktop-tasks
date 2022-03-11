@@ -37,7 +37,7 @@ namespace desktop_tasks
                 goal.isArchived = false;
                 if(_goalManager.Add(goal))
                 {
-                    MessageBox.Show("La tâche a bien été crée !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("La tâche a bien été créee !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Reset();
                     LoadData();
                 }

@@ -30,15 +30,15 @@
         {
             System.Windows.Forms.GroupBox groupBoxManager;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TasksFrame));
+            this.dataGridViewGoals = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBoxComment = new System.Windows.Forms.TextBox();
             this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.labelComment = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
             this.buttonCreate = new System.Windows.Forms.Button();
-            this.dataGridViewGoals = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBoxManager = new System.Windows.Forms.GroupBox();
             groupBoxManager.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGoals)).BeginInit();
@@ -55,6 +55,34 @@
             resources.ApplyResources(groupBoxManager, "groupBoxManager");
             groupBoxManager.Name = "groupBoxManager";
             groupBoxManager.TabStop = false;
+            // 
+            // dataGridViewGoals
+            // 
+            this.dataGridViewGoals.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewGoals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewGoals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.Title,
+            this.Comment});
+            resources.ApplyResources(this.dataGridViewGoals, "dataGridViewGoals");
+            this.dataGridViewGoals.Name = "dataGridViewGoals";
+            this.dataGridViewGoals.RowTemplate.Height = 29;
+            this.dataGridViewGoals.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // Id
+            // 
+            resources.ApplyResources(this.Id, "Id");
+            this.Id.Name = "Id";
+            // 
+            // Title
+            // 
+            resources.ApplyResources(this.Title, "Title");
+            this.Title.Name = "Title";
+            // 
+            // Comment
+            // 
+            resources.ApplyResources(this.Comment, "Comment");
+            this.Comment.Name = "Comment";
             // 
             // textBoxComment
             // 
@@ -82,33 +110,6 @@
             this.buttonCreate.Name = "buttonCreate";
             this.buttonCreate.UseVisualStyleBackColor = true;
             this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
-            // 
-            // dataGridViewGoals
-            // 
-            this.dataGridViewGoals.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewGoals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGoals.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.Title,
-            this.Comment});
-            resources.ApplyResources(this.dataGridViewGoals, "dataGridViewGoals");
-            this.dataGridViewGoals.Name = "dataGridViewGoals";
-            this.dataGridViewGoals.RowTemplate.Height = 29;
-            // 
-            // Id
-            // 
-            resources.ApplyResources(this.Id, "Id");
-            this.Id.Name = "Id";
-            // 
-            // Title
-            // 
-            resources.ApplyResources(this.Title, "Title");
-            this.Title.Name = "Title";
-            // 
-            // Comment
-            // 
-            resources.ApplyResources(this.Comment, "Comment");
-            this.Comment.Name = "Comment";
             // 
             // TasksFrame
             // 
