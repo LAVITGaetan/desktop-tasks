@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.GroupBox groupBoxManager;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TasksFrame));
             this.dataGridViewGoals = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBoxComment = new System.Windows.Forms.TextBox();
             this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.labelComment = new System.Windows.Forms.Label();
@@ -42,6 +45,7 @@
             groupBoxManager = new System.Windows.Forms.GroupBox();
             groupBoxManager.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGoals)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxManager
@@ -55,6 +59,7 @@
             resources.ApplyResources(groupBoxManager, "groupBoxManager");
             groupBoxManager.Name = "groupBoxManager";
             groupBoxManager.TabStop = false;
+            groupBoxManager.Enter += new System.EventHandler(this.groupBoxManager_Enter);
             // 
             // dataGridViewGoals
             // 
@@ -64,6 +69,7 @@
             this.Id,
             this.Title,
             this.Comment});
+            this.dataGridViewGoals.ContextMenuStrip = this.contextMenuStrip1;
             resources.ApplyResources(this.dataGridViewGoals, "dataGridViewGoals");
             this.dataGridViewGoals.Name = "dataGridViewGoals";
             this.dataGridViewGoals.RowTemplate.Height = 29;
@@ -84,6 +90,20 @@
             // 
             resources.ApplyResources(this.Comment, "Comment");
             this.Comment.Name = "Comment";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            resources.ApplyResources(this.deleteToolStripMenuItem, "deleteToolStripMenuItem");
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // textBoxComment
             // 
@@ -122,6 +142,7 @@
             groupBoxManager.ResumeLayout(false);
             groupBoxManager.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGoals)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -138,5 +159,7 @@
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn Title;
         private DataGridViewTextBoxColumn Comment;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem deleteToolStripMenuItem;
     }
 }

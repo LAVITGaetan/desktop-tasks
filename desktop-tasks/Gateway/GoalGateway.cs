@@ -34,6 +34,17 @@ namespace desktop_tasks.Gateway
             _dbContext.Update(goal);
             return _dbContext.SaveChanges() > 0;
         }
+
+        public bool Delete(int id)
+        {
+            var goalItem = _dbContext.Goals.FirstOrDefault(c => c.Id == id);
+            if (goalItem == null)
+            {
+                return false;
+            }
+            _dbContext.Goals.Remove(goalItem);
+            return _dbContext.SaveChanges()>0;
+        }
     }
 
 

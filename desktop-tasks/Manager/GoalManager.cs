@@ -26,5 +26,10 @@ namespace desktop_tasks.Manager
         {
             return _goalGateway.Update(goal);
         }
+
+        public bool Delete(int id)
+        {
+            return _goalGateway.Delete(id);
+        }
     }
 }

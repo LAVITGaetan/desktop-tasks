@@ -89,5 +89,33 @@ namespace desktop_tasks
             frm.textBoxCommentDetail.Text = row.Cells[2].Value.ToString();
             frm.ShowDialog();
         }
+
+        private void groupBoxManager_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataGridViewRow row = dataGridViewGoals.SelectedRows[0];
+                if(MessageBox.Show("Supprimer la tâche ?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    int id = Convert.ToInt32(row.Cells[0].Value);
+                    bool isDelete = _goalManager.Delete(id);
+                    if(isDelete)
+                    {
+                        _goalManager.Delete(id);
+                        MessageBox.Show("La tâche a bien été supprimée", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadData();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
