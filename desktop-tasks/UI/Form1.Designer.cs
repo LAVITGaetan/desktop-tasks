@@ -68,6 +68,7 @@
             this.dataGridViewGoals.Name = "dataGridViewGoals";
             this.dataGridViewGoals.RowTemplate.Height = 29;
             this.dataGridViewGoals.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewGoals.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewGoals_RowHeaderMouseDoubleClick);
             // 
             // Id
             // 

@@ -51,3 +51,4 @@ C:\Users\Glavi\source\repos\desktop-tasks\desktop-tasks\obj\Debug\net6.0-windows
 C:\Users\Glavi\source\repos\desktop-tasks\desktop-tasks\bin\Debug\net6.0-windows\Humanizer.dll
 C:\Users\Glavi\source\repos\desktop-tasks\desktop-tasks\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Glavi\source\repos\desktop-tasks\desktop-tasks\obj\Debug\net6.0-windows\desktop_tasks.TasksFrame.resources
+C:\Users\Glavi\source\repos\desktop-tasks\desktop-tasks\obj\Debug\net6.0-windows\desktop_tasks.UI.GoalFrame.resources
