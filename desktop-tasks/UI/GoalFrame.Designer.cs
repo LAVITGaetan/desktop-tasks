@@ -96,6 +96,7 @@
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // IdLabelGoal
             // 
@@ -104,6 +105,7 @@
             this.IdLabelGoal.Name = "IdLabelGoal";
             this.IdLabelGoal.Size = new System.Drawing.Size(0, 20);
             this.IdLabelGoal.TabIndex = 10;
+            this.IdLabelGoal.Visible = false;
             // 
             // GoalFrame
             // 
@@ -111,6 +113,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 274);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "GoalFrame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "GoalFrame";

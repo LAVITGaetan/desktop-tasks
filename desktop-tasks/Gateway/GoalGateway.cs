@@ -18,7 +18,21 @@ namespace desktop_tasks.Gateway
 
         public List<Goal> GetAll()
         {
-            return _dbContext.Goals.ToList();
+            return _dbContext.Goals.ToList();   
+        }
+
+        public bool Update(Goal goal)
+        {
+            var data = _dbContext.Goals.FirstOrDefault(c => c.Id == goal.Id);
+            if (data == null)
+            {
+                return false;
+            }
+
+            data.Title = goal.Title;
+            data.Comment = goal.Comment;
+            _dbContext.Update(goal);
+            return _dbContext.SaveChanges() > 0;
         }
     }
 

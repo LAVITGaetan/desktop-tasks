@@ -53,7 +53,7 @@ namespace desktop_tasks
             }
         }
 
-        private void Reset()
+        public void Reset()
         {
             textBoxTitle.Clear();
             textBoxComment.Clear();
@@ -70,7 +70,7 @@ namespace desktop_tasks
             }
         }
 
-        private void LoadData()
+        public void LoadData()
         {
             var goals = _goalManager.GetAll();
             dataGridViewGoals.Rows.Clear();
@@ -83,7 +83,7 @@ namespace desktop_tasks
         private void dataGridViewGoals_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             DataGridViewRow row = dataGridViewGoals.SelectedRows[0];
-            GoalFrame frm = new GoalFrame();
+            GoalFrame frm = new GoalFrame(this);
             frm.IdLabelGoal.Text = row.Cells[0].Value.ToString();
             frm.textBoxTitleDetail.Text = row.Cells[1].Value.ToString();
             frm.textBoxCommentDetail.Text = row.Cells[2].Value.ToString();

@@ -12,7 +12,8 @@ namespace desktop_tasks.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source = C:\Users\Glavi\source\repos\desktop-tasks\DB\TaskListDB.db");
+            optionsBuilder.UseSqlite(@"Data Source = C:\Users\Glavi\source\repos\desktop-tasks\DB\TaskListDB.db")
+            .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
         }
 
         public DbSet<Goal> Goals { get; set; }

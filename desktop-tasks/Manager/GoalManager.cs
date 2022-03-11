@@ -21,5 +21,10 @@ namespace desktop_tasks.Manager
         {
             return _goalGateway.GetAll();
         }
+
+        public bool Update(Goal goal)
+        {
+            return _goalGateway.Update(goal);
+        }
     }
 }
